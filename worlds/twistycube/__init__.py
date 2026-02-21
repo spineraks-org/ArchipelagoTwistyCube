@@ -48,7 +48,7 @@ class TwistyCubeWorld(World):
 
     puzzle: CubePuzzle
     
-    ap_world_version = "0.0.3"
+    ap_world_version = "1.0.0"
 
     def _get_twistycube_data(self):
         return {
@@ -137,6 +137,7 @@ class TwistyCubeWorld(World):
         slot_data = self._get_twistycube_data()
         twistycube_options = self.options.as_dict(
             "size_of_cube",
+            "min_stickers_to_goal_on_solve",
         )
         slot_data = {**slot_data, **twistycube_options}  # combine the two
         return slot_data
