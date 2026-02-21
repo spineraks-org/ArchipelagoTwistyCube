@@ -137,7 +137,6 @@ class TwistyCubeWorld(World):
         slot_data = self._get_twistycube_data()
         twistycube_options = self.options.as_dict(
             "size_of_cube",
-            "min_stickers_to_goal_on_solve",
         )
         slot_data = {**slot_data, **twistycube_options}  # combine the two
         return slot_data
